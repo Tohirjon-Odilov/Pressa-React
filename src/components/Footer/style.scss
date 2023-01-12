@@ -1,0 +1,42 @@
+.site-footer {
+  background: linear-gradient(265.48deg, #095acd 33.12%, #006aff 84.7%);
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      padding: 40px 0 33px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > div p {
+      position: relative;
+      color: white;
+      &:first-child {
+        margin-right: 77px;
+      }
+      &:nth-child(2) {
+        margin-right: 115px;
+      }
+      &:nth-child(3)::before {
+        content: url("../../assets//images/telefon.svg");
+        position: absolute;
+        left: -25px;
+      }
+    }
+    .social-wrapper {
+      img:nth-child(2) {
+        padding: 0 30px;
+      }
+      margin-left: 60px;
+      margin-right: 90px;
+    }
+  }
+}

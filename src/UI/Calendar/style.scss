@@ -1,0 +1,95 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.24rem;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5rem 0.2rem;
+  color: #333;
+
+  .month-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 15px rgba(#000, 0.05);
+    padding: 0.6rem;
+    background-color: #fff;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0 0.2rem 0.2rem;
+    user-select: none;
+    .current {
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn {
+      cursor: pointer;
+      &.arrow {
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  }
+  $cell-size: 2.5rem;
+  .dates-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: $cell-size * 7;
+    .week,
+    .date {
+      width: $cell-size;
+      height: $cell-size;
+      @include flexCenter;
+      &:nth-child(7n),
+      &:nth-child(7n + 1) {
+        color: #44a2a7;
+      }
+    }
+    .week {
+      font-size: 0.8rem;
+    }
+    .date {
+      animation: fadein 1s both;
+      font-size: 0.8rem;
+      &.today {
+        color: #fac176;
+        font-weight: bold;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 15%;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #fac176;
+        }
+      }
+      &.disabled {
+        color: rgba(#44a2a7, 0.3);
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}

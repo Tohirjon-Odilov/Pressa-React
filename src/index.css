@@ -1,0 +1,124 @@
+/* roboto-serif-regular - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-500 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-600 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-700 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-serif-regular - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-500 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-600 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-serif-700 - latin */
+@font-face {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("./assets/fonts/roboto-serif-v8-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/roboto-serif-v8-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto Serif", sans-serif;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 510px;
+  background-color: #095bcd;
+  z-index: -1;
+}
+
+.cursor {
+  cursor: pointer;
+}

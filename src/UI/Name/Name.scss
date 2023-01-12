@@ -1,0 +1,29 @@
+.name__wrapper {
+  padding: 20px 30px;
+  width: 261px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #fff;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    gap: 8px;
+    input {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
